@@ -1,0 +1,48 @@
+body, main {
+    display: flex
+}
+body {
+    flex-direction: column
+}
+main {
+    flex-direction: row;
+    flex: auto;
+}
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+    float: right;
+}
+h1 {
+    color: blue
+}
+footer, header {
+    text-align: center
+}
+footer {
+    border-top: thick double #C0C0C0;
+    border-style: solid;
+    border-right: thick double #C0C0C0;
+    border-left: thick double #C0C0C0;
+    background: #C0C0C0;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    font-size: 115%
+}
+h3 {
+    border-bottom: thick double #C0C0C0;
+    border-style: solid;
+    color: #000000;
+}
+header {
+    border-right: thick double #C0C0C0;
+    border-left: thick double #C0C0C0;
+    border-bottom: thick double #C0C0C0;
+    border-style: solid;
+}
