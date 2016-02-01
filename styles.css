@@ -1,3 +1,6 @@
+html {
+    width: 992px
+}
 body, main {
     display: flex
 }
@@ -11,11 +14,19 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    width: 662px;
+    text-align: left;
+    border-style: solid;
+    border-right: thick double #C0C0C0;
 }
 aside {
     flex: 1;
     overflow-y: auto;
     float: right;
+    width: 331px;
+    text-align: left;
+    border-style: solid;
+    border-left: thick double #C0C0C0;
 }
 h1 {
     color: blue
@@ -45,4 +56,9 @@ header {
     border-left: thick double #C0C0C0;
     border-bottom: thick double #C0C0C0;
     border-style: solid;
+
+}
+img {
+    width: 75px;
+    height: 75px;
 }
