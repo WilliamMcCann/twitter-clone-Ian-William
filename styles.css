@@ -27,7 +27,6 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
-    float: right;
     width: 331px;
     text-align: left;
     border-style: solid;
@@ -159,5 +158,9 @@ img {
 
 li a {
     color: burlywood
+}
+.aside_picture {
+    height: 60px;
+    width: 60px; 
 }
 
