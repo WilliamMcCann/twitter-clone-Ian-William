@@ -1,3 +1,37 @@
+html {
+    width: 992px
+}
+
+body, main {
+    display: flex
+}
+
+body {
+    flex-direction: column
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    border-style: solid;
+    overflow-y: auto;
+    text-align: left;
+    width: 662px;
+}
+
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    width: 331px;
+    text-align: left;
+    border-style: solid;
+}
+
 h1 {
     color: blue
 }
@@ -71,11 +105,6 @@ ul {
     float: right;
 }
 
-/*li~li { 
-    border-left: 1px solid #000000;
-    text-align: center;    
-} this is the code for the divider pipe, needs tweaking*/
-
 .profile_nav_li {
     display: inline-block;
     padding: 4px 6px;
@@ -127,37 +156,3 @@ li a {
     height: 60px;
     width: 60px; 
 }
-html {
-    width: 992px
-}
-
-body, main {
-    display: flex
-}
-
-body {
-    flex-direction: column
-}
-
-main {
-    flex-direction: row;
-    flex: auto;
-}
-
-article {
-    flex: 2;
-    border-style: solid;
-    overflow-y: auto;
-    text-align: left;
-    width: 662px;
-}
-
-
-aside {
-    flex: 1;
-    overflow-y: auto;
-    width: 331px;
-    text-align: left;
-    border-style: solid;
-}
-
