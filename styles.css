@@ -49,35 +49,64 @@ p {
 
 header {
     position: relative;
-    display: inline-block;
+    background-color: slategray;
     width: 992px;
-    height: auto;
-    position: relative;
     border-right: thick double #C0C0C0;
     border-left: thick double #C0C0C0;
     border-bottom: thick double #C0C0C0;
     border-style: solid;
-
 }
 #logo {
     position: relative;
+    float: left;
     left: 30px;
+    clear: left;
+
 }
 #main_title {
     position: relative;
+
     left: 30px;
+    clear: left;
 }
 #tagline {
     position: relative;
     left: 30px;
 }
-#profile_nav {
-    float: bottom;
-}
 
 #user_nav {
+    margin: 0 0px 0px 300px;
+    background-color: #333;
     display: inline-block;
 }
+
+.user_nav_li {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+}
+
+#profile_nav {
+    float: right;
+}
+
+.profile_nav_li{
+    display: inline-block;
+    padding: 14px 16px;
+}
+
+
+ul {
+    list-style-type: none;
+    
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: red;
+
+}
+
+
 img {
     width: 75px;
     height: 75px;
