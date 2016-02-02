@@ -16,21 +16,13 @@ main {
 }
 
 article {
+    flex: 2;
+    border-style: solid;
     overflow-y: auto;
     text-align: left;
+    width: 662px;
 }
 
-#user_photos {
-    border-left: solid;
-    border-bottom: solid;
-    border-top: solid;
-}
-
-#user_status {
-    flex: 2;
-    border-top: solid;
-    border-bottom: solid;
-}
 
 aside {
     flex: 1;
@@ -114,23 +106,15 @@ ul {
 .user_photo {
     float: left;
     clear: left;
-    padding-bottom: 20px;
     width: 75px;
     height: 75px;
+    margin-right: 10px;
+    position: relative;
 }
 .status {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-
-<<<<<<< HEAD
-
-=======
-img {
-    width: 75px;
-    height: 75px;
 }
 
 #welcome {
@@ -140,4 +124,12 @@ img {
     width: 200px;
     border: 2px solid green;
 }
->>>>>>> refs/remotes/origin/master
+.user_bold {
+    height: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.date_posted {
+    height: 15px;
+    color: slategray;
+}
