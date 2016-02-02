@@ -16,21 +16,13 @@ main {
 }
 
 article {
+    flex: 2;
+    border-style: solid;
     overflow-y: auto;
     text-align: left;
+    width: 662px;
 }
 
-#user_photos {
-    border-left: solid;
-    border-bottom: solid;
-    border-top: solid;
-}
-
-#user_status {
-    flex: 2;
-    border-top: solid;
-    border-bottom: solid;
-}
 
 aside {
     flex: 1;
@@ -43,6 +35,12 @@ aside {
 
 h1 {
     color: blue
+}
+
+h2 {
+    color: black;
+    text-decoration: underline;
+    display: block;
 }
 
 footer {
@@ -67,56 +65,66 @@ ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    color: red;
+    
 }
 
 #logo {
     position: relative;
     float: left;
     left: 30px;
-    clear: left;
+    clear; left;
+    clear; right;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid black;
 
 }
 
 #main_title {
     position: relative;
-
     left: 30px;
     clear: left;
 }
 
 #tagline {
     position: relative;
-    left: 30px;
+    margin: -10px 0px 20px 30px;
 }
 
 #user_nav {
     margin: 0 0px 0px 300px;
-    background-color: #333;
     display: inline-block;
 }
 
 .user_nav_li {
     float: left;
     display: block;
-    padding: 14px 16px;
+    padding: 4px 6px;
+    background-color: darkblue;
+    margin: 0px 10px 20px 10px;
 }
 
 #profile_nav {
     float: right;
 }
 
+/*li~li { 
+    border-left: 1px solid #000000;
+    text-align: center;    
+} this is the code for the divider pipe, needs tweaking*/
+
 .profile_nav_li {
     display: inline-block;
-    padding: 14px 16px;
+    padding: 4px 6px;
+    margin: 0px 10px 20px 10px;
 }
 .user_photo {
     float: left;
     clear: left;
-    padding-bottom: 20px;
     width: 75px;
     height: 75px;
+    margin-right: 10px;
+    position: relative;
 }
 .status {
     margin-bottom: 20px;
@@ -124,20 +132,38 @@ ul {
     margin-right: 20px;
 }
 
-
 <<<<<<< HEAD
-
 =======
 img {
     width: 75px;
     height: 75px;
 }
 
+>>>>>>> b7df93808ebb3656938de7201e12b8fb5f3c3cec
 #welcome {
     position: fixed;
     bottom: 0;
-    right: 0;
+    right: 0;        
     width: 200px;
     border: 2px solid green;
 }
->>>>>>> refs/remotes/origin/master
+<<<<<<< HEAD
+.user_bold {
+    height: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.date_posted {
+    height: 15px;
+    color: slategray;
+}
+=======
+
+#tagline {
+    color: red;
+}
+
+li a {
+    color: burlywood
+}
+>>>>>>> b7df93808ebb3656938de7201e12b8fb5f3c3cec
