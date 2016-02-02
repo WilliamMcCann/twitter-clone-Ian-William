@@ -131,15 +131,11 @@ ul {
     margin-left: 20px;
     margin-right: 20px;
 }
-
-<<<<<<< HEAD
-=======
 img {
     width: 75px;
     height: 75px;
 }
 
->>>>>>> b7df93808ebb3656938de7201e12b8fb5f3c3cec
 #welcome {
     position: fixed;
     bottom: 0;
@@ -147,7 +143,6 @@ img {
     width: 200px;
     border: 2px solid green;
 }
-<<<<<<< HEAD
 .user_bold {
     height: 10px;
     text-decoration: underline;
@@ -157,7 +152,6 @@ img {
     height: 15px;
     color: slategray;
 }
-=======
 
 #tagline {
     color: red;
@@ -166,4 +160,4 @@ img {
 li a {
     color: burlywood
 }
->>>>>>> b7df93808ebb3656938de7201e12b8fb5f3c3cec
+
