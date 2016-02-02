@@ -125,4 +125,19 @@ ul {
 }
 
 
+<<<<<<< HEAD
 
+=======
+img {
+    width: 75px;
+    height: 75px;
+}
+
+#welcome {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    border: 2px solid green;
+}
+>>>>>>> refs/remotes/origin/master
