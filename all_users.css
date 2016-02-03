@@ -7,23 +7,14 @@ body {
 }
 
 article {
-    flex: 2;
     border-style: solid;
     overflow-y: auto;
     text-align: left;
-    width: 662px;
-}
-
-aside {
-    flex: 1;
-    overflow-y: auto;
-    width: 331px;
-    text-align: left;
-    border-style: solid;
+    width: 992px;
 }
 
 li a {
-    color: burlywood
+    color: burlywood;
 }
 h2 {
     color: black;
@@ -114,9 +105,7 @@ ul {
 }
 
 .status {
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 2px;
 }
 
 #welcome {
@@ -135,8 +124,9 @@ ul {
 }
 
 .date_posted {
-    height: 15px;
+    height: 20px;
     color: slategray;
+    margin: 2px;
 }
 
 #tagline {
@@ -182,4 +172,13 @@ ul {
 #pipefree {
     margin-right: 10px;
     padding-right: 10px;
+}
+
+.skunk_number {
+    margin: 2px;
+    color: darksalmon;
+}
+
+.users_display {
+    margin: 20px;
 }
