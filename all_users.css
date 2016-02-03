@@ -1,0 +1,184 @@
+marbody, main {
+    display: flex
+}
+
+body {
+    flex-direction: column
+}
+
+article {
+    border-style: solid;
+    overflow-y: auto;
+    text-align: left;
+    width: 992px;
+}
+
+li a {
+    color: burlywood;
+}
+h2 {
+    color: black;
+    text-decoration: underline;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    border-style: solid;
+    background-color: slategray;
+}
+
+p {
+    font-family: "Arial", Times, Sans-serif;
+    color: #000000;
+    font-size: 105%
+}
+
+header {
+    position: relative;
+    background-color: slategray;
+    border-style: solid;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#logo {
+    position: relative;
+    float: left;
+    left: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid black;
+
+}
+
+#main_title {
+    position: relative;
+    left: 30px;
+    clear: left;
+}
+
+#tagline {
+    position: relative;
+    margin: -10px 0px 20px 30px;
+}
+
+#user_nav {
+    display: inline-block;
+    margin-left: 352.664px;
+    margin-right: 352.664px;
+}
+
+.user_nav_li {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    margin: 0px 10px 20px 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#profile_nav {
+    float: right;
+}
+
+.profile_nav_li {
+    display: inline-block;
+    padding-right: 15px, 10px 10px, 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.user_photo {
+    float: left;
+    clear: left;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    border-style: solid; 
+}
+
+.status {
+    margin: 2px;
+}
+
+#welcome {
+    position: fixed;
+    bottom: 0;
+    right: 0;        
+    width: 200px;
+    border: 2px solid green;
+    background-color: grey;
+}
+
+.user_bold {
+    height: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.date_posted {
+    height: 20px;
+    color: slategray;
+    margin: 2px;
+}
+
+#tagline {
+    color: red;
+}
+
+#pipe_me {
+    padding-left: 20px; 
+    padding-right: 15px;
+    border-left:#ccc solid 1px;
+}
+
+.aside_picture {
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+.aside_bio {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Master_container {
+    width: 992px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#nbsp {
+    display: none;
+}
+
+#pipe_me {
+    padding-left: 5px;
+    padding-right: 15px;
+    border-left: burlywood solid 1px;
+
+}
+
+#pipefree {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.skunk_number {
+    margin: 2px;
+    color: darksalmon;
+}
+
+.users_display {
+    margin: 20px;
+}
