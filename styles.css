@@ -35,7 +35,9 @@ aside {
 h1 {
     color: blue
 }
-
+li a {
+    color: burlywood
+}
 h2 {
     color: black;
     text-decoration: underline;
@@ -97,8 +99,9 @@ ul {
     float: left;
     display: block;
     padding: 4px 6px;
-    background-color: darkblue;
     margin: 0px 10px 20px 10px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 #profile_nav {
@@ -113,9 +116,10 @@ ul {
 .user_photo {
     float: left;
     clear: left;
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     margin-right: 10px;
+    margin-left: 10px;
     position: relative;
 }
 .status {
@@ -151,5 +155,8 @@ img {
 
 .aside_picture {
     height: 60px;
-    width: 60px; 
+    width: 60px;
+    border-style: solid;
+    margin-left: 10px;
+    margin-top: 10px; 
 }
