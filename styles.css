@@ -1,18 +1,9 @@
-html {
-    width: 992px
-}
-
 body, main {
     display: flex
 }
 
 body {
     flex-direction: column
-}
-
-main {
-    flex-direction: row;
-    flex: auto;
 }
 
 article {
@@ -23,7 +14,6 @@ article {
     width: 662px;
 }
 
-
 aside {
     flex: 1;
     overflow-y: auto;
@@ -32,9 +22,6 @@ aside {
     border-style: solid;
 }
 
-h1 {
-    color: blue
-}
 li a {
     color: burlywood
 }
@@ -51,9 +38,9 @@ footer {
 }
 
 p {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", Times, Sans-serif;
     color: #000000;
-    font-size: 110%
+    font-size: 105%
 }
 
 header {
@@ -91,8 +78,9 @@ ul {
 }
 
 #user_nav {
-    margin: 0 0px 0px 300px;
     display: inline-block;
+    margin-left: 352.664px;
+    margin-right: 352.664px;
 }
 
 .user_nav_li {
@@ -110,9 +98,10 @@ ul {
 
 .profile_nav_li {
     display: inline-block;
-    padding: 4px 6px;
-    margin: 0px 10px 20px 10px;
+
+
 }
+
 .user_photo {
     float: left;
     clear: left;
@@ -121,15 +110,13 @@ ul {
     margin-right: 10px;
     margin-left: 10px;
     position: relative;
+    border-style: solid; 
 }
+
 .status {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-}
-img {
-    width: 75px;
-    height: 75px;
 }
 
 #welcome {
@@ -138,12 +125,15 @@ img {
     right: 0;        
     width: 200px;
     border: 2px solid green;
+    background-color: grey;
 }
+
 .user_bold {
     height: 10px;
     text-decoration: underline;
     font-weight: bold;
 }
+
 .date_posted {
     height: 15px;
     color: slategray;
@@ -159,4 +149,31 @@ img {
     border-style: solid;
     margin-left: 10px;
     margin-top: 10px; 
+}
+
+.aside_bio {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Master_container {
+    width: 992px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#nbsp {
+    display: none;
+}
+
+#pipe_me {
+    padding-left: 5px;
+    padding-right: 15px;
+    border-left: burlywood solid 1px;
+
+}
+
+#pipefree {
+    margin-right: 10px;
+    padding-right: 10px;
 }
