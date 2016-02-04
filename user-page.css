@@ -24,6 +24,13 @@ ul {
     overflow: hidden;
     
 }
+
+h2 {
+    text-decoration: underline;
+    color: black;
+    display: block;
+
+}
 li a {
     color: burlywood
 }
