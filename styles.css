@@ -23,7 +23,7 @@ aside {
 }
 
 li a {
-    color: burlywood
+    color: black
 }
 h2 {
     color: black;
@@ -176,7 +176,6 @@ ul {
     margin-right: 10px;
     padding-right: 10px;
 }
-
 a {
     text-decoration: none;
     background: linear-gradient(grey,white);
