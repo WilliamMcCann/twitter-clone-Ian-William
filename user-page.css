@@ -33,6 +33,7 @@ li a {
 }
 
 #pipe_me {
+    margin-left: 0;
     padding-left: 5px;
     padding-right: 15px;
     border-left: burlywood solid 1px;
@@ -176,4 +177,10 @@ footer {
     color: purple;
 }
 
+a {
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}

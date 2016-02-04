@@ -90,7 +90,6 @@ ul {
 .profile_nav_li {
     display: inline-block;
     padding-right: 15px, 10px 10px, 10px;
-    margin: 10px 10px 10px 10px;
 }
 
 .user_photo {
@@ -181,4 +180,15 @@ ul {
 
 .users_display {
     margin: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    grad
+    
+    transition: opacity 2s ease-in;    
+
 }
