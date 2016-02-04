@@ -179,8 +179,20 @@ ul {
 
 a {
     text-decoration: none;
+    background: linear-gradient(grey,white);
+    transition: color 2s, background 2s;
+
 }
 
 a:hover {
+    color: red;
     text-decoration: underline;
+    background: none;
+    background-color: white;
+    transition: color 2s, background 2s;
+
+}
+
+a:active {
+    background: none;
 }
