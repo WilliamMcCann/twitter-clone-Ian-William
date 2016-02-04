@@ -182,9 +182,17 @@ ul {
     margin: 20px;
 }
 
-a{
+a {
     text-decoration: none;
+    background: linear-gradient(grey,white);
 }
+
 a:hover {
     text-decoration: underline;
+    background: linear-gradient(white,grey);
+
+}
+
+a:active {
+    background: none;
 }
