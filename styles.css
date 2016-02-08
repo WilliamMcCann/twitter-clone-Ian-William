@@ -4,20 +4,16 @@
     margin-left: auto;
 }
 
-#main_area {
-    vertical-align: top;
-}
-
 article {
     margin: 0;
-    width: 70%;
+    width: 69%;
     border-style: solid;
     overflow-y: auto;
     text-align: left;
     margin-right: 0px;
-    display: block;
     float: left;
-    clear: both;
+    clear: none;
+    min-height: 946px;
 }
 
 aside {
@@ -26,9 +22,9 @@ aside {
     overflow-y: auto;
     text-align: left;
     border-style: solid;
-    display: block;
-    float: right;
-    clear: both;
+    border-left: none;
+    clear: none;
+    min-height: 946px;
 }
 
 li a {
@@ -165,11 +161,6 @@ ul {
     margin-right: 10px;
 }
 
-#Master_container {
-    width: 992px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 #nbsp {
     display: none;

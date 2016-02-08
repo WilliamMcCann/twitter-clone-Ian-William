@@ -4,14 +4,6 @@
     margin-left: auto;
 }
 
-body, main {
-    display: flex
-}
-
-body {
-    flex-direction: column
-}
-
 header {
     position: relative;
     background-color: slategray;
