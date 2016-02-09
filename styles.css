@@ -1,25 +1,30 @@
-body, main {
-    display: flex
-}
-
-body {
-    flex-direction: column
+#Master_container {
+    width: 992px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 article {
-    flex: 2;
+    margin: 0;
+    width: 69%;
     border-style: solid;
     overflow-y: auto;
     text-align: left;
-    width: 662px;
+    margin-right: 0px;
+    float: left;
+    clear: none;
+    min-height: 946px;
 }
 
 aside {
-    flex: 1;
+    margin: 0;
+    width: 30%;
     overflow-y: auto;
-    width: 331px;
     text-align: left;
     border-style: solid;
+    border-left: none;
+    clear: none;
+    min-height: 946px;
 }
 
 li a {
@@ -34,6 +39,7 @@ h2 {
 footer {
     text-align: center;
     border-style: solid;
+    clear: both;
     background-color: slategray;
 }
 
@@ -55,7 +61,6 @@ ul {
     overflow: hidden;
     
 }
-
 
 #logo {
     position: relative;
@@ -156,11 +161,6 @@ ul {
     margin-right: 10px;
 }
 
-#Master_container {
-    width: 992px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 #nbsp {
     display: none;
