@@ -3,9 +3,44 @@
     margin: 0 auto;
 }
 
-@media only screen and (max-device-width: 480px)
-{}
+@media screen and (max-width: 768px) {}
+    
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+#responsive_div{
+        float: left;
+        display: inline-block;
+    }
+
+    aside {
+    width: 30%;
+    background-color: aqua;
+    display: inline-block;
+    float: left;
+    clear: both; 
+    }    
+    
+#aside_1 {
+    width: 30%;
+    background-color: aqua;
+    display: inline-block;
+    float: left;
+    clear: both;
+    }
+#aside_2 {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    clear: both;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {}
+    
+    
 article {
     margin: 0;
     overflow-y: auto;
@@ -17,7 +52,7 @@ article {
 }
 
 aside {
-    margin: 0;
+    margin: auto;
     overflow-y: auto;
     text-align: left;
     border-style: solid;
