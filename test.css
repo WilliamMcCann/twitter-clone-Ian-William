@@ -3,37 +3,42 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px)
-
-    
-{}
+@media screen and (max-width: 768px) {}
     
 
-@media screen and (min-width: 768px) and (max-width: 992px)
-{
-    
-    #aside_1 {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+#responsive_div{
+        float: left;
+        display: inline-block;
+    }
+
+    aside {
+    width: 30%;
     background-color: aqua;
     display: inline-block;
     float: left;
-    clear: right;
-    }
-    #aside_2 {
+    clear: both; 
+    }    
+    
+#aside_1 {
+    width: 30%;
+    background-color: aqua;
     display: inline-block;
     float: left;
-    clear: right;
+    clear: both;
     }
-    footer {
+#aside_2 {
+    width: 30%;
     display: inline-block;
     float: left;
-    clear: right;
+    clear: both;
     }
+
     
 }
 
-@media screen and (min-width: 992px)
-
-{}
+@media screen and (min-width: 992px) {}
     
     
 article {
@@ -47,7 +52,7 @@ article {
 }
 
 aside {
-    margin: 0;
+    margin: auto;
     overflow-y: auto;
     text-align: left;
     border-style: solid;
