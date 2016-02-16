@@ -35,6 +35,7 @@ p {
 }
 
 header {
+    display: flex;
     position: relative;
     background-color: slategray;
     border-style: solid;
@@ -195,7 +196,7 @@ a:active {
     float: left;
     clear: none;
     border-style: solid;
-    min-height: auto;
+    min-height: 1100px;
 }
 
 aside {
@@ -398,7 +399,7 @@ article {
     margin-right: 0px;
     float: left;
     clear: none;
-    min-height: 946px;
+    min-height: 1140px;
 }
 
 aside {
@@ -434,10 +435,11 @@ p {
 }
 
 header {
-    position: relative;
+    display: flex;
     background-color: slategray;
     border-style: solid;
-    overflow: hidden;
+    overflow-y: auto;
+    height: 200px;
 }
 
 ul {
@@ -447,36 +449,36 @@ ul {
     
 }
 
+#logo_title_tagline {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
 #logo {
-    position: relative;
-    float: left;
-    left: 30px;
-    margin: 10px;
     padding: 15px;
     border: 2px solid black;
-
+    margin-top: 10px;
 }
 
 #main_title {
-    position: relative;
-    left: 30px;
-    clear: left;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 #tagline {
-    position: relative;
-    margin: -10px 0px 20px 30px;
+    margin-top: 10px;
 }
 
 #user_nav {
-    display: inline-block;
-    margin-left: 352.664px;
-    margin-right: 352.664px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
 }
 
 .user_nav_li {
-    float: left;
-    display: block;
     padding: 4px 6px;
     margin: 0px 10px 20px 10px;
     border-style: solid;
@@ -484,9 +486,7 @@ ul {
 }
 
 #profile_nav {
-    float: right;
-    position: relative;
-    top: -250px;
+    justify-content: flex-end;
 }
 
 .profile_nav_li {
