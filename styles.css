@@ -1,11 +1,30 @@
+/* small screen */
+
 @media screen and (max-width: 768px) {
-    
+
+/*status box*/
+#post_a_status{
+    display: none;
+}
+
+#box_of_text{
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+#check_box{
+
+}
+
     article {
     margin: 0;
     overflow-y: auto;
     text-align: left;
     float: left;
-    clear: none;
+    clear: left;
     border-style: solid;
     min-height: auto;
 }
@@ -36,7 +55,8 @@ p {
 
 header {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: slategray;
     border-style: solid;
 }
@@ -45,12 +65,16 @@ ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    
 }
 
+#logo_title_tagline {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+    
 #logo {
-    position: relative;
-    float: left;
     left: 30px;
     margin: 10px;
     padding: 15px;
@@ -59,24 +83,19 @@ ul {
 }
 
 #main_title {
-    position: relative;
-    left: 30px;
-    clear: left;
-}
+  }
 
 #tagline {
-    position: relative;
-    margin: -10px 0px 20px 30px;
+    margin: -10px 0px 0px 0px;
 }
 
 #user_nav {
-    display: inline-block;
-    margin: 0 auto;
-  }
+    display: flex;
+    justify-content: flex-start;
+   }
 
 .user_nav_li {
     float: left;
-    display: block;
     padding: 4px 6px;
     margin: 0px 10px 20px 10px;
     border-style: solid;
@@ -84,12 +103,12 @@ ul {
 }
 
 #profile_nav {
+    margin-top: -10px;
     margin-left: 20px;
 }
 
 .profile_nav_li {
     display: inline-block;
-    padding-right: 15px, 10px 10px, 10px;
 }
 
 .user_photo {
@@ -108,6 +127,8 @@ ul {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/*beta notice in footer postion*/
 
 #welcome {
     position: relative;
@@ -185,10 +206,27 @@ a:active {
 
 
 
-
+/*medium-sized screens*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   
+/*status box*/
+#post_a_status{
+
+}
+
+#box_of_text{
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+#check_box{
+
+}
+
     article {
     margin: 0;
     overflow-y: auto;
@@ -225,7 +263,8 @@ p {
 }
 
 header {
-    position: relative;
+    display: flex;  
+    flex-direction: column;
     background-color: slategray;
     border-style: solid;
 }
@@ -265,8 +304,8 @@ footer {
 }
 
 #user_nav {
-    display: inline-block;
-    margin: 0 auto;
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
 .user_nav_li {
@@ -279,8 +318,9 @@ footer {
 }
 
 #profile_nav {
-    float: auto;
-    margin-left: 20px;
+   justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: -5px;
 }
 
 .profile_nav_li {
@@ -379,10 +419,29 @@ a:active {
 
 }
 
+/*largest screens*/
     
     
 @media screen and (min-width: 992px){
-    
+
+/*status box*/
+#post_a_status{
+
+}
+
+#box_of_text{
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+#check_box{
+
+}
+
+
 #Master_container {
     width: 992px;
     margin-right: auto;
@@ -439,7 +498,7 @@ header {
     background-color: slategray;
     border-style: solid;
     overflow-y: auto;
-    height: 200px;
+    height: 250px;
 }
 
 ul {
@@ -457,17 +516,20 @@ ul {
 }
 
 #logo {
+    display: flex;
     padding: 15px;
     border: 2px solid black;
     margin-top: 10px;
 }
 
 #main_title {
+    display: flex;
     margin-top: 10px;
     margin-bottom: 0;
 }
 
 #tagline {
+    display: flex;
     margin-top: 10px;
 }
 
@@ -476,6 +538,7 @@ ul {
     justify-content: center;
     align-items: flex-end;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .user_nav_li {
@@ -487,6 +550,7 @@ ul {
 
 #profile_nav {
     justify-content: flex-end;
+    margin-left: 150px;
 }
 
 .profile_nav_li {
