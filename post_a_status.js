@@ -8,11 +8,12 @@ function setUpEvents(){
     /*adds event listeners to listen for the button clicks in the HTML*/
     function addListeners(){
         if(window.addEventListener) {
-            document.getElementById('BUTTON ID');.addEventListener("click",BUTTON LISTENER FUNCTION NAME,false);
+            document.getElementById('post_a_status');.addEventListener("click",revealForm,false);
         }   else if (window.attachEvent) {
-                document.getElementById('BUTTON LISTENER FUNCTION NAME').attachEvent("onclick", BUTTON LISTENER FUNCTION NAME);
+                document.getElementById('revealForm').attachEvent("onclick", revealForm);
         }
-        function BUTTON LISTENER FUNCTION NAME(){
+        function revealForm(){
+            var checkbox = document.getElementById("")
             FUNCTION THAT DOES THE THING YOU WANT TO DO;
         }
     };
