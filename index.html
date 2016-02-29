@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skunk Love Microblog Main Page</title>
-  <link href="styles.css" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skunk Love Microblog Main Page</title>
+    <link href="styles.css" rel="stylesheet"> 
+    <script src="post_a_status.js"></script>
 </head>
 
 
@@ -39,7 +40,7 @@
       <article>
         
         <!--"Post a status" box-->
-          <a id=post_trigger_button LINK TEXT>Post a status!</a>
+          <input type="button" id="buttonTriggersChange" onclick="changeContent()" value="Post a Status"/>
         <div id="post_a_status">
           <form id="status_form" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
           enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
