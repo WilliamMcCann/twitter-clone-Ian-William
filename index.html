@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skunk Love Microblog Main Page</title>
-  <link href="styles.css" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skunk Love Microblog Main Page</title>
+    <link href="styles.css" rel="stylesheet"> 
+    <script src="post_a_status.js"></script>
 </head>
 
 
@@ -39,7 +40,7 @@
       <article>
         
         <!--"Post a status" box-->
-          <a id=post_trigger_button LINK TEXT>Post a status!</a>
+          <input type="button" id="buttonTriggersChange" value="Post a Status">
         <div id="post_a_status">
           <form id="status_form" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
           enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
@@ -69,6 +70,7 @@
       <p class="status">
         Wow, Holberton School is awesome!
       </p>
+      <input type="button" id="replybutton" value="Reply">
     </div>
     <div>
       <img class="user_photo" src="http://i.imgur.com/6w6wT6l.jpg?1" alt="William McCann user picture">   
@@ -85,6 +87,7 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur.
       </p>
+       <input type="button" id="replybutton" value="Reply">
     </div>
     <div>
       <img class="user_photo" src="http://i.imgur.com/EracF3j.jpg?1" alt="SkunkyMcSkunkerson user picture">   
@@ -102,6 +105,7 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+       <input type="button" id="replybutton" value="Reply">
     </div>
     <div>
       <img class="user_photo" src="http://i.imgur.com/huIPviu.jpg?1" alt="LoveMySkunk user picture">   
@@ -116,6 +120,7 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+       <input type="button" id="replybutton" value="Reply">
     </div>
     <div>
       <img class="user_photo" src="http://i.imgur.com/dM0KkL4.png" alt="Skunkman123 user picture">   
@@ -138,6 +143,7 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+       <input type="button" id="replybutton" value="Reply">
     </div>
   </article>
   <!--user bios-->
