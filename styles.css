@@ -1,11 +1,13 @@
+#post_a_status{
+    display: none;
+}
+
 /* small screen */
 
 @media screen and (max-width: 768px) {
 
 /*status box*/
-#post_a_status{
-    display: none;
-}
+
 
 #box_of_text{
     width: 600px;
@@ -211,9 +213,7 @@ a:active {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   
 /*status box*/
-#post_a_status{
 
-}
 
 #box_of_text{
     width: 600px;
@@ -425,9 +425,6 @@ a:active {
 @media screen and (min-width: 992px){
 
 /*status box*/
-#post_a_status{
-
-}
 
 #box_of_text{
     width: 600px;
