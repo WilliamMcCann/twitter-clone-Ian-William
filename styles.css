@@ -2,6 +2,10 @@
     display: none;
 }
 
+.reply_div{
+    display: none;
+}
+
 /* small screen */
 
 @media screen and (max-width: 768px) {

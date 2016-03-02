@@ -6,6 +6,7 @@
     <title>Skunk Love Microblog Main Page</title>
     <link href="styles.css" rel="stylesheet"> 
     <script src="post_a_status.js"></script>
+    <script src="reply.js"></script>
 </head>
 
 
@@ -59,7 +60,9 @@
      
      
      <h5 id="nbsp">&nbsp;</h5>
-     <div>    
+     
+    <!--STATUS 1-->      
+    <div>    
       <img class="user_photo" src="https://lh3.googleusercontent.com/-KYuxgGUbyHk/Vp8PCOq_c2I/AAAAAAAAAA4/GQ3pWZQ_uZg/w280-h280-p/20151215_151935-1.jpg" alt="Ian Wagener user picture">
       <p class="user_bold">
         Ian Wagener
@@ -70,8 +73,25 @@
       <p class="status">
         Wow, Holberton School is awesome!
       </p>
-      <input type="button" id="replybutton" value="Reply">
+      <input type="button" class="buttonreply" id="replybutton1" data-order="status_1_reply" value="Reply">
+         <div class="reply_div" id="status_1_reply">
+          <form id="reply_form_1" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+          <fieldset>
+            <legend>Post a reply:</legend>
+            <textarea name="test" id="box_of_text">
+              What's your skunk reply?
+            </textarea>
+            <input type="submit" value="Post" id="post_button">
+            <label for="check_box">Include location
+             <input type="checkbox" name="vehicle" value="Bike" id="check_box"> 
+           </label>
+         </fieldset>
+       </form>
+     </div>     
     </div>
+          
+    <!--STATUS 2--> 
     <div>
       <img class="user_photo" src="http://i.imgur.com/6w6wT6l.jpg?1" alt="William McCann user picture">   
       <p class="user_bold">
@@ -87,8 +107,24 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur.
       </p>
-       <input type="button" id="replybutton" value="Reply">
+       <input type="button" class="buttonreply" id="replybutton2" data-order="status_2_reply" value="Reply">
+               <div class="reply_div" id="status_2_reply" >
+          <form id="reply_form_2" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+          <fieldset>
+            <legend>Post a reply:</legend>
+            <textarea name="test" id="box_of_text">
+              What's your skunk reply?
+            </textarea>
+            <input type="submit" value="Post" id="post_button">
+            <label for="check_box">Include location
+             <input type="checkbox" name="vehicle" value="Bike" id="check_box"> 
+           </label>
+         </fieldset>
+       </form>
+     </div> 
     </div>
+    <!--STATUS 3--> 
     <div>
       <img class="user_photo" src="http://i.imgur.com/EracF3j.jpg?1" alt="SkunkyMcSkunkerson user picture">   
       <p class="user_bold">
@@ -105,8 +141,25 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-       <input type="button" id="replybutton" value="Reply">
+       <input type="button" class="buttonreply" id="replybutton3" data-order="status_3_reply" value="Reply">
+               <div class="reply_div" id="status_3_reply">
+          <form id="reply_form_3" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+          <fieldset>
+            <legend>Post a reply:</legend>
+            <textarea name="test" id="box_of_text">
+              What's your skunk reply?
+            </textarea>
+            <input type="submit" value="Post" id="post_button">
+            <label for="check_box">Include location
+             <input type="checkbox" name="vehicle" value="Bike" id="check_box"> 
+           </label>
+         </fieldset>
+       </form>
+     </div> 
     </div>
+          
+    <!--STATUS 4--> 
     <div>
       <img class="user_photo" src="http://i.imgur.com/huIPviu.jpg?1" alt="LoveMySkunk user picture">   
       <p class="user_bold">
@@ -120,8 +173,25 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-       <input type="button" id="replybutton" value="Reply">
+       <input type="button" class="buttonreply" id="replybutton4" data-order="status_4_reply" value="Reply">
+    <div class="reply_div" id="status_4_reply">
+          <form id="reply_form_4" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+          <fieldset>
+            <legend>Post a reply:</legend>
+            <textarea name="test" id="box_of_text">
+              What's your skunk reply?
+            </textarea>
+            <input type="submit" value="Post" id="post_button">
+            <label for="check_box">Include location
+             <input type="checkbox" name="vehicle" value="Bike" id="check_box"> 
+           </label>
+         </fieldset>
+       </form>
+     </div> 
     </div>
+    
+    <!--STATUS 5--> 
     <div>
       <img class="user_photo" src="http://i.imgur.com/dM0KkL4.png" alt="Skunkman123 user picture">   
       <p class="user_bold">
@@ -143,7 +213,22 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-       <input type="button" id="replybutton" value="Reply">
+       <input type="button" class="buttonreply" id="replybutton5" data-order="status_5_reply" value="Reply">
+    <div class="reply_div" id="status_5_reply">
+          <form id="reply_form_5" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+          <fieldset>
+            <legend>Post a reply:</legend>
+            <textarea name="test" id="box_of_text">
+              What's your skunk reply?
+            </textarea>
+            <input type="submit" value="Post" id="post_button">
+            <label for="check_box">Include location
+             <input type="checkbox" name="vehicle" value="Bike" id="check_box"> 
+           </label>
+         </fieldset>
+       </form>
+     </div> 
     </div>
   </article>
   <!--user bios-->
