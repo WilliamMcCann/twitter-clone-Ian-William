@@ -13,15 +13,15 @@
 /*status box*/
 
 
-#box_of_text{
-    width: 600px;
-    height: 120px;
+.box_of_text{
+    width: auto;
+    height: auto;
     border: 3px solid #cccccc;
     padding: 5px;
     font-family: Tahoma, sans-serif;
 }
 
-#check_box{
+.check_box{
 
 }
 
@@ -219,15 +219,15 @@ a:active {
 /*status box*/
 
 
-#box_of_text{
-    width: 600px;
-    height: 120px;
+.box_of_text{
+    width: auto;
+    height: auto;
     border: 3px solid #cccccc;
     padding: 5px;
     font-family: Tahoma, sans-serif;
 }
 
-#check_box{
+.check_box{
 
 }
 
@@ -430,15 +430,15 @@ a:active {
 
 /*status box*/
 
-#box_of_text{
-    width: 600px;
-    height: 120px;
+.box_of_text{
+    width: auto;
+    height: auto;
     border: 3px solid #cccccc;
     padding: 5px;
     font-family: Tahoma, sans-serif;
 }
 
-#check_box{
+.check_box{
 
 }
 
