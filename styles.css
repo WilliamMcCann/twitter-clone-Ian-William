@@ -6,6 +6,18 @@
     display: none;
 }
 
+#buttonTriggersChange {
+    margin-top: 10px;
+}
+
+.showmore {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    background-color: slategray
+}
 /* small screen */
 
 @media screen and (max-width: 768px) {
@@ -453,7 +465,6 @@ article {
     margin: 0;
     width: 69%;
     border-style: solid;
-    border-right: none;
     overflow-y: auto;
     text-align: left;
     margin-right: 0px;
@@ -468,6 +479,7 @@ aside {
     overflow-y: auto;
     text-align: left;
     border-style: solid;
+    border-left: none;
     clear: none;
   
 }
