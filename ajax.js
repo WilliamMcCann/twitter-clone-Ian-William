@@ -1,9 +1,4 @@
 	function ajaxGet(url, onSuccess) {
-		var timeoutID;
-
-		function delayedAlert() {
-			timeoutID = window.setTimeout(ajaxGet, 2000);
-		}
 		xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function()
 		{	

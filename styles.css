@@ -5,9 +5,20 @@
 .reply_div{
     display: none;
 }
+.buttonreply {
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: slategray;
+}
 
 #buttonTriggersChange {
+    margin: 0 auto;
     margin-top: 10px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    background-color: slategray
 }
 
 .showmore {
