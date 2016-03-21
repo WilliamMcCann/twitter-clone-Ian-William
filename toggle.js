@@ -1,6 +1,5 @@
 HTMLElement.prototype.toggle = function() {
-    if (this.style.display == ''){
-       this.style.display = "block";
+    s
         }else {
             this.style.display = '';
         }
