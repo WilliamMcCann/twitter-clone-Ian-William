@@ -5,18 +5,36 @@
 .reply_div{
     display: none;
 }
-
-#buttonTriggersChange {
-    margin-top: 10px;
+.buttonreply {
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: slategray;
+    margin-bottom: 5px;
 }
 
-.showmore {
+#buttonTriggersChange {
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-top: 5px;
     display: block;
     color: white;
     font-size: 30px;
     background-color: slategray
+}
+
+.showmore {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    background-color: slategray
+}
+.status_div {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: black;
 }
 /* small screen */
 
