@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Maps with HERE</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="stylesheet" type="text/css"
+    href="https://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+</head>
+<body>
+ <div id="map" style="position: absolute; width: 100%; height: 100%; background: grey" />
+  <script  type="text/javascript" charset="UTF-8" >
+    
+/**
+ * Moves the map to display over SF
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application
+ */
+function moveMapToSF(map){
+  map.setCenter({lat:37.792107, lng:-122.399411});
+  map.setZoom(16);
+}
+
+//Step 1: initialize communication with the platform
+var platform = new H.service.Platform({
+  app_id: 'CT5xpn8s9HX5sqhaSpFL',
+  app_code: 'a5ANB5QfH_ZGluCXIfchbg',
+  useCIT: true,
+  useHTTPS: true
+});
+var defaultLayers = platform.createDefaultLayers();
+
+//Step 2: initialize a map  - not specificing a location will give a whole world view.
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map);
+
+//Step 3: make the map interactive
+// MapEvents enables the event system
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI components
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+// Now use the map as required...
+moveMapToSF(map);
+
+// Create an info bubble object at a specific geographic location:
+var bubble = new H.ui.InfoBubble({ lng: -122.399411, lat: 37.792107 }, {
+        content: '<b>Hello Holberton School!</b>'
+       });
+/*
+// Add info bubble to the UI:
+ui.addBubble(bubble);
+*/
+var control = new H.ui.ZoomRectangle;
+ui.addControl("zoomRectangle", control);
+
+// Add window resize listener to adjust the map dimensions.
+window.addEventListener('resize', function() {
+  map.getViewPort().resize();
+});
+
+function onContextMenuRequested(e) {
+    e.items.push(new H.util.ContextItem({label: 'Hello Holberton School!',}));
+}
+// Add 'Zoom in' context menu item
+map.addEventListener('contextmenu', onContextMenuRequested); 
+    
+      
+/*      
+//geolocation code, get's location from mouse
+function setUpClickListener(map) {
+  map.addEventListener('tap', function (evt) {
+    var coord = map.screenToGeo(evt.currentPointer.viewportX,
+            evt.currentPointer.viewportY);
+    alert('Clicked at ' + Math.abs(coord.lat.toFixed(4)) +
+        ((coord.lat > 0) ? 'N' : 'S') +
+        ' ' + Math.abs(coord.lng.toFixed(4)) +
+         ((coord.lng > 0) ? 'E' : 'W'));
+  });
+}
+*/
+  </script>
+</body>
+</html>

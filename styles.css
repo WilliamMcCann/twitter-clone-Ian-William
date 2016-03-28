@@ -1,25 +1,77 @@
-body, main {
-    display: flex
+#post_a_status{
+    display: none;
 }
 
-body {
-    flex-direction: column
+.reply_div{
+    display: none;
+}
+.buttonreply {
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: slategray;
+    margin-bottom: 5px;
 }
 
-article {
-    flex: 2;
-    border-style: solid;
+#buttonTriggersChange {
+    margin: 0 auto;
+    margin-top: 5px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    background-color: slategray
+}
+
+.showmore {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    background-color: slategray
+}
+.status_div {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: black;
+}
+/* small screen */
+
+@media screen and (max-width: 768px) {
+
+/*status box*/
+
+
+.box_of_text{
+    width: auto;
+    height: auto;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+.check_box{
+
+}
+
+    article {
+    margin: 0;
     overflow-y: auto;
     text-align: left;
-    width: 662px;
+    float: left;
+    clear: left;
+    border-style: solid;
+    min-height: auto;
 }
 
 aside {
-    flex: 1;
+    margin: auto;
     overflow-y: auto;
-    width: 331px;
     text-align: left;
     border-style: solid;
+    clear: none;
+    min-height: auto;
 }
 
 li a {
@@ -31,10 +83,226 @@ h2 {
     display: block;
 }
 
+p {
+    font-family: "Arial", Times, Sans-serif;
+    color: #000000;
+    font-size: 105%
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: slategray;
+    border-style: solid;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
 footer {
     text-align: center;
     border-style: solid;
-    background-color: slategray;
+    background-image: url("https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg");
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer_links {
+    color: green;
+    background: none;
+}
+
+#logo_title_tagline {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+    
+#logo {
+    left: 30px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid black;
+
+}
+
+#main_title {
+  }
+
+#tagline {
+    margin: -10px 0px 0px 0px;
+}
+
+#user_nav {
+    display: flex;
+    justify-content: flex-start;
+   }
+
+.user_nav_li {
+    float: left;
+    padding: 4px 6px;
+    margin: 0px 10px 20px 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#profile_nav {
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.profile_nav_li {
+    display: inline-block;
+}
+
+.user_photo {
+    float: left;
+    clear: left;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    border-style: solid; 
+}
+
+.status {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*beta notice in footer postion*/
+
+#welcome {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;        
+    width: auto;
+    border: 2px solid green;
+    background-color: grey;
+}
+
+.user_bold {
+    height: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.date_posted {
+    height: 15px;
+    color: slategray;
+}
+
+#tagline {
+    color: red;
+}
+
+.aside_picture {
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+.aside_bio {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#nbsp {
+    display: none;
+}
+
+#pipe_me {
+    padding-left: 5px;
+    padding-right: 15px;
+    border-left: burlywood solid 1px;
+}
+
+#pipefree {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;
+    background: linear-gradient(grey,white);
+    transition: color 2s, background 2s;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background: none;
+    background-color: white;
+    transition: color 2s, background 2s;
+
+}
+
+a:active {
+    background: none;
+}
+
+}
+
+
+
+/*medium-sized screens*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+/*status box*/
+
+
+.box_of_text{
+    width: auto;
+    height: auto;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+.check_box{
+
+}
+
+    article {
+    margin: 0;
+    overflow-y: auto;
+    text-align: left;
+    float: left;
+    clear: none;
+    border-style: solid;
+    min-height: 1100px;
+}
+
+aside {
+    float:left;
+    overflow-y: auto;
+    text-align: left;
+    border-style: solid;
+    clear: none;
+    min-height: auto;
+    width: 29%;
+}
+
+li a {
+    color: black
+}
+h2 {
+    color: black;
+    text-decoration: underline;
+    display: block;
 }
 
 p {
@@ -44,7 +312,8 @@ p {
 }
 
 header {
-    position: relative;
+    display: flex;  
+    flex-direction: column;
     background-color: slategray;
     border-style: solid;
 }
@@ -53,10 +322,27 @@ ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    
+    }
+
+footer {
+    float: left;
+    margin: 0;
+    width: 29%;
+    display: inline-block;
+    border-style: solid;
+    background-image: url("https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg");
+    background-size: 100%;
+    }
+
+.footer-text {
+    color: white;
 }
 
-
+.footer_links {
+    color: green;
+    background: none;
+}
+    
 #logo {
     position: relative;
     float: left;
@@ -79,9 +365,8 @@ ul {
 }
 
 #user_nav {
-    display: inline-block;
-    margin-left: 352.664px;
-    margin-right: 352.664px;
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
 .user_nav_li {
@@ -94,7 +379,240 @@ ul {
 }
 
 #profile_nav {
-    float: right;
+   justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+.profile_nav_li {
+    display: inline-block;
+    padding-right: 15px, 10px, 10px, 10px;
+}
+
+.user_photo {
+    float: left;
+    clear: left;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    border-style: solid; 
+}
+
+.status {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#welcome {
+    text-align: center;  
+    margin-top: 0;
+    margin-right: 20;
+    width: 20;
+    border: 2px solid green;
+    background-color: grey;
+}
+
+.user_bold {
+    height: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.date_posted {
+    height: 15px;
+    color: slategray;
+}
+
+#tagline {
+    color: red;
+}
+
+.aside_picture {
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+.aside_bio {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#nbsp {
+    display: none;
+}
+
+#pipe_me {
+    padding-left: 5px;
+    padding-right: 15px;
+    border-left: burlywood solid 1px;
+}
+
+#pipefree {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;
+    background: linear-gradient(grey,white);
+    transition: color 2s, background 2s;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background: none;
+    background-color: white;
+    transition: color 2s, background 2s;
+
+}
+
+a:active {
+    background: none;
+}
+
+}
+
+/*largest screens*/
+    
+    
+@media screen and (min-width: 992px){
+
+/*status box*/
+
+.box_of_text{
+    width: auto;
+    height: auto;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+.check_box{
+
+}
+
+
+#Master_container {
+    width: 992px;
+    margin: 0 auto;
+}
+
+article {
+    margin: 0;
+    width: 69%;
+    border-style: solid;
+    overflow-y: auto;
+    text-align: left;
+    margin-right: 0px;
+    float: left;
+    clear: none;
+    min-height: 1140px;
+}
+
+aside {
+    margin: 0;
+    width: 30%;
+    overflow-y: auto;
+    text-align: left;
+    border-style: solid;
+    border-left: none;
+    clear: none;
+  
+}
+
+li a {
+    color: black
+}
+h2 {
+    color: black;
+    text-decoration: underline;
+    display: block;
+}
+
+footer {
+    background-image: url("https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg");
+    background-size: 100%;
+    height: 50px;
+    text-align: center;
+    border-style: solid;
+    clear: both;
+}
+.footer-text {
+    color: white;
+}
+
+p {
+    font-family: "Arial", Times, Sans-serif;
+    color: #000000;
+    font-size: 105%
+}
+
+header {
+    display: flex;
+    background-color: slategray;
+    border-style: solid;
+    overflow-y: auto;
+    height: 250px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#logo_title_tagline {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#logo {
+    display: flex;
+    padding: 15px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+#main_title {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#tagline {
+    display: flex;
+    margin-top: 10px;
+}
+
+#user_nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.user_nav_li {
+    padding: 4px 6px;
+    margin: 0px 10px 20px 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#profile_nav {
+    justify-content: flex-end;
+    margin-left: 150px;
 }
 
 .profile_nav_li {
@@ -156,11 +674,6 @@ ul {
     margin-right: 10px;
 }
 
-#Master_container {
-    width: 992px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 #nbsp {
     display: none;
@@ -194,4 +707,9 @@ a:hover {
 
 a:active {
     background: none;
+}
+.footer_links {
+    color: green;
+    background: none;
+}
 }

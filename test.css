@@ -1,23 +1,72 @@
+#Master_container {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {}
+    
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+#responsive_div{
+        float: left;
+        display: inline-block;
+    }
+
+    aside {
+    width: 30%;
+    background-color: aqua;
+    display: inline-block;
+    float: left;
+    clear: both; 
+    }    
+    
+#aside_1 {
+    width: 30%;
+    background-color: aqua;
+    display: inline-block;
+    float: left;
+    clear: both;
+    }
+#aside_2 {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    clear: both;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {}
+    
+    
 article {
-    border-style: solid;
+    margin: 0;
     overflow-y: auto;
     text-align: left;
-    width: 992px;
+    float: left;
+    clear: none;
+    border-style: solid;
+    min-height: auto;
+}
+
+aside {
+    margin: auto;
+    overflow-y: auto;
+    text-align: left;
+    border-style: solid;
+    clear: none;
+    min-height: auto;
 }
 
 li a {
-    color: black;
+    color: black
 }
 h2 {
     color: black;
     text-decoration: underline;
     display: block;
-}
-
-footer {
-    text-align: center;
-    border-style: solid;
-    background-color: slategray;
 }
 
 p {
@@ -62,8 +111,7 @@ ul {
 
 #user_nav {
     display: inline-block;
-    margin-left: 352.664px;
-    margin-right: 352.664px;
+    margin: 0 auto;
 }
 
 .user_nav_li {
@@ -76,7 +124,8 @@ ul {
 }
 
 #profile_nav {
-    float: right;
+    float: auto;
+    margin-left: 20px;
 }
 
 .profile_nav_li {
@@ -96,14 +145,16 @@ ul {
 }
 
 .status {
-    margin: 2px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #welcome {
-    position: fixed;
-    bottom: 0;
-    right: 0;        
-    width: 200px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;        
+    width: auto;
     border: 2px solid green;
     background-color: grey;
 }
@@ -115,19 +166,12 @@ ul {
 }
 
 .date_posted {
-    height: 20px;
+    height: 15px;
     color: slategray;
-    margin: 2px;
 }
 
 #tagline {
     color: red;
-}
-
-#pipe_me {
-    padding-left: 20px; 
-    padding-right: 15px;
-    border-left:#ccc solid 1px;
 }
 
 .aside_picture {
@@ -143,11 +187,6 @@ ul {
     margin-right: 10px;
 }
 
-#Master_container {
-    width: 992px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 #nbsp {
     display: none;
@@ -157,23 +196,12 @@ ul {
     padding-left: 5px;
     padding-right: 15px;
     border-left: burlywood solid 1px;
-
 }
 
 #pipefree {
     margin-right: 10px;
     padding-right: 10px;
 }
-
-.skunk_number {
-    margin: 2px;
-    color: darksalmon;
-}
-
-.users_display {
-    margin: 20px;
-}
-
 a {
     text-decoration: none;
     background: linear-gradient(grey,white);
