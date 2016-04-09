@@ -1,3 +1,21 @@
+<?php
+$users = [
+array("id" => 1, "login" => "user1", "password" => "password1", "full_name" => "User 1"),
+array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
+array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
+];
+function userExists($login, $password, $users)
+{
+  foreach ($users as $value) {
+    if ($value['login'] == $login) {
+      if ($value['password'] == $password) {
+        return $value["full_name"];
+      }
+    }
+  }
+  return false;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,100 +61,120 @@
 
       <!--Blog post area-->
       <article>
+        <div>
+          <p id="Hello_user">
+            <?php
+            if ($_POST["login"]){
+              if (userExists($_POST["login"], $_POST['password'], $users) == false) {
+                echo "Hello, there!";
+                echo "<br>";
+                echo "<p id='error'>Invalid credentials</p>";
+              }
+              else {
+                echo "Hello, " . userExists($_POST["login"], $_POST['password'], $users);
+                echo "<br>";
+                echo "Your rot13’d login is: " . str_rot13($_POST["login"]) . ",";
+                echo " and the length of your login is: " . strlen($_POST["login"]);
+              }
+            } else {
+              echo "Hello, there!";
+            }
+            ?></p>
+          </div>
 
-        <!--"Post a status" box-->
-        <input type="button" id="buttonTriggersChange" value="Post a Status">
-        <div id="post_a_status">
-          <form id="status_form" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+          <!--"Post a status" box-->
+          <input type="button" id="buttonTriggersChange" value="Post a Status">
+          <div id="post_a_status">
+            <form id="status_form" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+            enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+            <fieldset>
+              <legend>Post a status:</legend>
+              <textarea name="test" id="box_of_text">
+                What's your skunk status?
+              </textarea>
+              <input type="submit" value="Post" id="post_button">
+              <label for="check_box1">Include location
+               <input type="checkbox" name="vehicle" value="Bike" id="check_box1"> 
+             </label>
+           </fieldset>
+         </form>
+       </div>    
+
+
+       <h5 id="nbsp">&nbsp;</h5>
+
+       <!--STATUS 1-->      
+       <div class="status_div">    
+        <img class="user_photo" src="https://lh3.googleusercontent.com/-KYuxgGUbyHk/Vp8PCOq_c2I/AAAAAAAAAA4/GQ3pWZQ_uZg/w280-h280-p/20151215_151935-1.jpg" alt="Ian Wagener user picture">
+        <p class="user_bold">
+          Ian Wagener
+        </p>
+        <p class="date_posted">
+          1/29/16
+        </p>
+        <p class="status">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <input type="button" class="buttonreply" id="replybutton1" data-order="status_1_reply" value="Reply">
+        <div class="reply_div" id="status_1_reply">
+          <form id="reply_form_1" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
           enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
           <fieldset>
-            <legend>Post a status:</legend>
-            <textarea name="test" id="box_of_text">
-              What's your skunk status?
+            <legend>Post a reply:</legend>
+            <textarea name="test" class="box_of_text">
+              What's your skunk reply?
             </textarea>
-            <input type="submit" value="Post" id="post_button">
-            <label for="check_box1">Include location
-             <input type="checkbox" name="vehicle" value="Bike" id="check_box1"> 
+            <input type="submit" value="Post" class="post_button">
+            <label for="check_box2">Include location
+             <input type="checkbox" name="vehicle" value="Bike" id="check_box2"> 
            </label>
          </fieldset>
        </form>
-     </div>    
-     
-     
-     <h5 id="nbsp">&nbsp;</h5>
-     
-     <!--STATUS 1-->      
-     <div class="status_div">    
-      <img class="user_photo" src="https://lh3.googleusercontent.com/-KYuxgGUbyHk/Vp8PCOq_c2I/AAAAAAAAAA4/GQ3pWZQ_uZg/w280-h280-p/20151215_151935-1.jpg" alt="Ian Wagener user picture">
-      <p class="user_bold">
-        Ian Wagener
-      </p>
-      <p class="date_posted">
-        1/29/16
-      </p>
-      <p class="status">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, 
-        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <input type="button" class="buttonreply" id="replybutton1" data-order="status_1_reply" value="Reply">
-      <div class="reply_div" id="status_1_reply">
-        <form id="reply_form_1" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
-        enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-        <fieldset>
-          <legend>Post a reply:</legend>
-          <textarea name="test" class="box_of_text">
-            What's your skunk reply?
-          </textarea>
-          <input type="submit" value="Post" class="post_button">
-          <label for="check_box2">Include location
-           <input type="checkbox" name="vehicle" value="Bike" id="check_box2"> 
-         </label>
-       </fieldset>
-     </form>
-   </div>     
- </div>
+     </div>     
+   </div>
 
- <!--STATUS 2--> 
- <div class="status_div">
-  <img class="user_photo" src="http://i.imgur.com/6w6wT6l.jpg?1" alt="William McCann user picture">   
-  <p class="user_bold">
-    William McCann
-  </p>
-  <p class="date_posted">
-    1/20/16
-  </p>
-  <p class="status">
-    Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur.
-  </p>
-  <input type="button" class="buttonreply" id="replybutton2" data-order="status_2_reply" value="Reply">
-  <div class="reply_div" id="status_2_reply" >
-    <form id="reply_form_2" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
-    enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-    <fieldset>
-      <legend>Post a reply:</legend>
-      <textarea name="test" class="box_of_text">
-        What's your skunk reply?
-      </textarea>
-      <input type="submit" value="Post" class="post_button">
-      <label for="check_box3">Include location
-       <input type="checkbox" name="vehicle" value="Bike" id="check_box3"> 
-     </label>
-   </fieldset>
- </form>
-</div> 
+   <!--STATUS 2--> 
+   <div class="status_div">
+    <img class="user_photo" src="http://i.imgur.com/6w6wT6l.jpg?1" alt="William McCann user picture">   
+    <p class="user_bold">
+      William McCann
+    </p>
+    <p class="date_posted">
+      1/20/16
+    </p>
+    <p class="status">
+      Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <input type="button" class="buttonreply" id="replybutton2" data-order="status_2_reply" value="Reply">
+    <div class="reply_div" id="status_2_reply" >
+      <form id="reply_form_2" action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+      enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+      <fieldset>
+        <legend>Post a reply:</legend>
+        <textarea name="test" class="box_of_text">
+          What's your skunk reply?
+        </textarea>
+        <input type="submit" value="Post" class="post_button">
+        <label for="check_box3">Include location
+         <input type="checkbox" name="vehicle" value="Bike" id="check_box3"> 
+       </label>
+     </fieldset>
+   </form>
+ </div> 
 </div>
 <!--STATUS 3--> 
 <div class="status_div">
@@ -437,7 +475,7 @@
 </div> 
 </div>
 <div id="extra_statuses">
-<input type="button" class="showmore" id="showmore1" data-order="show_more_1" value="Show more">
+  <input type="button" class="showmore" id="showmore1" data-order="show_more_1" value="Show more">
 </div>
 </article>
 <!--user bios-->
@@ -481,7 +519,6 @@
     </p>
   </div>
 </aside>
-
 </main> 
 
 <!--Footer area-->   

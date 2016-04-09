@@ -1,10 +1,25 @@
 #post_a_status{
     display: none;
 }
+#error {
+    color: red;
+    font-size: 150%;
+}
+#Hello_user {
+    text-align: center;        
+    width: auto;
+    border: 2px solid green;
+    background-color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
 
 .reply_div{
     display: none;
 }
+
 .buttonreply {
     margin-left: 10px;
     color: white;
@@ -31,6 +46,7 @@
     font-size: 30px;
     background-color: slategray
 }
+
 .status_div {
     border-bottom: solid;
     border-width: 2px;
