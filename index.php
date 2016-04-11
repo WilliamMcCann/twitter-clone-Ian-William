@@ -1,13 +1,13 @@
 <?php
 $users = [
-array("id" => 1, "login" => "user1", "password" => "password1", "full_name" => "User 1"),
-array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
-array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
+array("id" => 1, "username" => "user1", "password" => "password1", "full_name" => "User 1"),
+array("id" => 2, "username" => "user2", "password" => "password2", "full_name" => "User 2"),
+array("id" => 3, "username" => "user3", "password" => "password3", "full_name" => "User 3"),
 ];
-function userExists($login, $password, $users)
+function userExists($username, $password, $users)
 {
   foreach ($users as $value) {
-    if ($value['login'] == $login) {
+    if ($value['username'] == $username) {
       if ($value['password'] == $password) {
         return $value["full_name"];
       }
@@ -64,17 +64,16 @@ function userExists($login, $password, $users)
         <div>
           <p id="Hello_user">
             <?php
-            if ($_POST["login"]){
-              if (userExists($_POST["login"], $_POST['password'], $users) == false) {
+            if ($_POST["username"]){
+              if (userExists($_POST["username"], $_POST['password'], $users) == false) {
                 echo "Hello, there!";
                 echo "<br>";
                 echo "<p id='error'>Invalid credentials</p>";
               }
               else {
-                echo "Hello, " . userExists($_POST["login"], $_POST['password'], $users);
-                echo "<br>";
-                echo "Your rot13’d login is: " . str_rot13($_POST["login"]) . ",";
-                echo " and the length of your login is: " . strlen($_POST["login"]);
+                echo "Hello, " . userExists($_POST["username"], $_POST['password'], $users);
+                echo "Your rot13’d login is: " . str_rot13($_POST["username"]) . ",";
+                echo " and the length of your login is: " . strlen($_POST["username"]);
               }
             } else {
               echo "Hello, there!";

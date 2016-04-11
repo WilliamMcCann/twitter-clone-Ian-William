@@ -5,11 +5,12 @@
     color: red;
     font-size: 150%;
 }
+
 #Hello_user {
     text-align: center;        
     width: auto;
-    border: 2px solid green;
-    background-color: grey;
+    border: 2px solid black;
+    background-color: whitesmoke;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 3px;
@@ -122,9 +123,9 @@ ul {
 footer {
     text-align: center;
     border-style: solid;
-    background-image: url("https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg");
+    background-color: black;
 }
-
+    
 .footer-text {
     color: white;
 }
@@ -218,7 +219,7 @@ footer {
 }
 
 #tagline {
-    color: red;
+    color: black;
 }
 
 .aside_picture {
@@ -346,8 +347,7 @@ footer {
     width: 29%;
     display: inline-block;
     border-style: solid;
-    background-image: url("https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg");
-    background-size: 100%;
+    background-color: black;
     }
 
 .footer-text {
@@ -443,7 +443,7 @@ footer {
 }
 
 #tagline {
-    color: red;
+    color: black;
 }
 
 .aside_picture {
@@ -554,8 +554,7 @@ h2 {
 }
 
 footer {
-    background-image: url("https://intranet.hbtn.io/images/contents/higher_level_programming/projects/twitter/dark-background.jpg");
-    background-size: 100%;
+    background-color: black;
     height: 50px;
     text-align: center;
     border-style: solid;
@@ -674,7 +673,7 @@ ul {
 }
 
 #tagline {
-    color: red;
+    color: black;
 }
 
 .aside_picture {
